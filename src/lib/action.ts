@@ -1,12 +1,11 @@
 "use server";
 
-
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { type LoginState } from "./type";
 import { getServerAuthClient } from "@/app/config";
 
-export async function loginAction(prevState: LoginState, formData: FormData): Promise<LoginState> {
+export async function loginAction(_prevState: LoginState, formData: FormData): Promise<LoginState> {
 	const email = formData.get("email")?.toString();
 	const password = formData.get("password")?.toString();
 
