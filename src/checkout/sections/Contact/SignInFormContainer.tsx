@@ -35,7 +35,9 @@ export const SignInFormContainer: React.FC<PropsWithChildren<SignInFormContainer
 								onClick={onSectionChange}
 								variant="tertiary"
 								label={redirectButtonLabel}
-							/>
+							>
+								惦记我
+							</Button>
 						)}
 					</div>
 				</div>

@@ -26,6 +26,7 @@ export const GuestUser: React.FC<GuestUserProps> = ({
 			redirectButtonLabel="Sign in"
 			onSectionChange={onSectionChange}
 		>
+			<p>GuestUser</p>
 			<FormProvider form={form}>
 				<div className="grid grid-cols-1 gap-3">
 					<TextInput

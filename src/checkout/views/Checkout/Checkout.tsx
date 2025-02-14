@@ -10,6 +10,7 @@ import { CheckoutSkeleton } from "@/checkout/views/Checkout/CheckoutSkeleton";
 
 export const Checkout = () => {
 	const { checkout, fetching: fetchingCheckout } = useCheckout();
+	//useUserQuery()返回{ data, fetching: loading, stale }三个值
 	const { loading: isAuthenticating } = useUser();
 
 	const isCheckoutInvalid = !fetchingCheckout && !checkout && !isAuthenticating;
